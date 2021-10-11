@@ -1,0 +1,19 @@
+.about_h3 {
+  h3 {
+    font-size: 1.5em;
+  }
+
+  ul {
+    li {
+      color: #777;
+    }
+  }
+}
+.source {
+  a {
+    color: blue;
+    &:hover {
+      color: aqua;
+    }
+  }
+}

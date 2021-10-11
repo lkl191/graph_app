@@ -1,0 +1,18 @@
+$blue: #072335;
+$gray: #eee;
+$green: #a9ffb8;
+$red: #df7d50;
+$primary-title: #ccb036;
+$second-title: #96dadd;
+
+// graph 一覧
+$index-title: 20px;
+$index-padding: 30px;
+
+
+$breakpoints: (
+    'sm': 'screen and (max-width: 400px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)',
+) !default;

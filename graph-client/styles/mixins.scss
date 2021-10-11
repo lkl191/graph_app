@@ -1,0 +1,33 @@
+//@import "./variables.scss";
+
+//title
+@mixin primary-title($fontSize) {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: $fontSize;
+}
+
+//login
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin blank($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+//sizes
+@mixin sizes(
+  $width,
+  $height
+) {
+  width: $width;
+  height: $height;
+}
+//media query
+@mixin mq($breakpoint: md){
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

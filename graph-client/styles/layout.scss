@@ -1,0 +1,70 @@
+.container {
+  margin: 10px auto;
+  width: 800px;
+  flex: 1;
+  @include mq() {
+    margin: auto 20px;
+    width: auto;
+  }
+}
+.flex {
+  display: flex;
+}
+body {
+  margin: 0;
+}
+#__next {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.button {
+  //color: $blue;
+  margin-left: 1%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  border: 0.5px $green solid;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 7px;
+  &:hover {
+    background-color: $green;
+  }
+  @include mq() {
+    font-size: 50%;
+  }
+}
+.input_text {
+  //@include sizes(50%, auto);
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px $gray solid;
+  transition-duration: 0.2s;
+  &:hover {
+    border: 2px #aaa solid;
+  }
+  &:focus {
+    //padding: 11px;
+    border: 2px $green solid;
+    z-index: 10;
+    outline: 0;
+  }
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.center {
+  margin: 10px auto;
+  text-align: center;
+}

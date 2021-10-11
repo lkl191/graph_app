@@ -1,0 +1,14 @@
+.crt_graph {
+  border: 2px dashed $gray;
+  text-align: center;
+  font-size: $index-title;
+  padding: $index-padding;
+  transition-duration: 0.7s;
+  &:hover {
+    border: 2px dashed black;
+    background-color: $gray;
+  }
+  @include mq() {
+    font-size: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+.user {
+  display: flex;
+  margin: auto;
+  margin-right: 0;
+  vertical-align: middle;
+  @include mq() {
+    margin-left: 50px;
+    display: inline-block;
+  }
+}
+
+.header {
+  display: flex;
+  padding: 20px 50px 20px;
+  border-bottom: 2px $gray solid;
+  @include sizes(auto, auto);
+  @include mq() {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 20px;
+    text-align: center;
+  }
+}
+.app_name {
+  //padding: 10px;
+  margin: auto 5px;
+  @include mq() {
+    display: inline;
+  }
+}
+.app_name_text{
+  padding: 15px;
+  border: 2px $green solid;
+  background-color: $green;
+  &:hover{
+    background-color: white;
+    border: 2px green solid;
+  }
+  @include mq() {
+    padding: 12px;
+    font-size: 100%;
+  }
+}
+.about_div{
+  padding: 10px;
+  @include mq() {
+    display: inline;
+  }
+}
+.about{
+  padding: 10px;
+  vertical-align: middle;
+  border: 2px $gray solid;
+  background-color: $gray;
+  &:hover{
+    background-color: #fff;
+    border: 2px black solid;
+  }
+  @include mq() {
+    padding: 5px;
+  }
+}
+
+.user-icon-img {
+  background-color: $gray;
+  border-radius: 50%;
+  //border: 1px solid $green;
+}
+
+.user-icon {
+  height: 30px;
+  
+}

@@ -1,0 +1,84 @@
+#overlay {
+  /*　画面全体を覆う設定　*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  /*　画面の中央に要素を表示させる設定　*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //margin: 110px;
+}
+
+#content {
+  @include sizes(20%, auto);
+  @include blank(_, 1rem);
+  //padding: 1rem;
+  background: $gray;
+  //display: inline-flex;
+  @include mq(lg) {
+    @include sizes(50%, auto);
+  }
+}
+.sso {
+  @include sizes(100%, auto);
+  border-radius: 0;
+  border: none;
+  padding: 3px 10px;
+  display: flex;
+  &:hover {
+    background-color: $gray;
+  }
+  p {
+    margin: auto;
+  }
+}
+.google_sso {
+  background-color: aqua;
+}
+.github_sso {
+  background-color: #fff;
+  color: black;
+  margin-bottom: 20px;
+  &:hover {
+    color: white;
+    background-color: #555;
+  }
+}
+.close {
+  margin-top: 10px;
+}
+
+.user-items {
+  margin: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+  @include mq() {
+    display: inline-block;
+  }
+}
+.logined {
+  padding: 10px;
+}
+.login_content {
+  max-width: 221px;
+  width: 100%;
+  text-align: center;
+}
+.signIn {
+  margin-right: 10px;
+}
+.veri_delete {
+  border: 2px red solid;
+  &:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+  }
+}

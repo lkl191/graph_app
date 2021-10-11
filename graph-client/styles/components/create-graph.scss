@@ -1,0 +1,29 @@
+.graphKind {
+  transition-duration: 0.4s;
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.create_btn {
+  float: right;
+}
+
+.click_invalid {
+  cursor: not-allowed;
+}
+
+.attention {
+  color: red;
+  text-align: center;
+}
+
+.input_color {
+  width: 3%;
+  @include mq() {
+    width: 6%;
+  }
+}
+
+.description {
+  transition-duration: 0s;
+}

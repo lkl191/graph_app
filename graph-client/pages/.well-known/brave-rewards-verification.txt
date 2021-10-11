@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: graphs.tokyo
+Token: 266472962843433d19bd526b5805822e4628b5f2cdf58b6238ad5cd956b0bf90

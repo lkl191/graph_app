@@ -1,0 +1,77 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+.graph-index {
+  @include primary-title(23px);
+  padding: $index-padding;
+  border: 3px $gray solid;
+  transition-duration: 0.4s;
+  //border-radius: 10px;
+  &:hover {
+    //background-color: #ccc;
+    background-color: #ccc;
+  }
+  @include mq() {
+    padding: $index-padding / 2;
+    margin: 10px auto;
+  }
+}
+a {
+  text-decoration: none;
+  &:link {
+    color: black;
+  }
+  &:visited {
+    color: black;
+  }
+}
+
+.graph_title{
+  font-size: $index-title;
+  @include mq() {
+    font-size: 15px
+  }
+}
+
+.graph_desc {
+  font-size: 17px;
+  color: #bbb;
+  @include mq() {
+    font-size: 15px;
+  }
+}
+.graph_image{
+  background-color: #fff;
+  margin-right: 30px;
+}
+
+.other-title {
+  @include primary-title(30px);
+}
+.search{
+  //border: 2px $green solid;
+  background-color: $green;
+  //border: 2px $gray solid;
+  border-radius: 1;
+  &:hover{
+    background-color: white;
+    border: 3px $gray solid;
+  }
+}
+.search_input{
+  &:focus{
+    padding: 11px;
+    border: 1px $green solid;
+  }
+}
+
+.description_allGraph {
+  //padding: 10px;
+  margin: 0;
+  color: #888;
+  font-size: 18px;
+  @include mq() {
+    font-size: 12px;
+  }
+}
