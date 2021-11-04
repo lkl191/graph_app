@@ -1,6 +1,6 @@
 import { ApolloServer } from "apollo-server-express";
 import { buildFederatedSchema } from "@apollo/federation";
-import mongoose from "mongoose";
+import * as mongoose from "mongoose";
 import * as dotenv from "dotenv";
 dotenv.config();
 

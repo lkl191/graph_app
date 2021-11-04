@@ -15,8 +15,8 @@ import { Auth } from "../../context/auth";
 const cache = new InMemoryCache({});
 
 const httpLink = new HttpLink({
-  //uri: "http://localhost:4000/graphql",
-  uri: "https://genbu.shishin.nara.jp:4443/graphql",
+  uri: "http://localhost:4000/graphql",
+  //uri: "https://genbu.shishin.nara.jp:4000/graphql",
 });
 
 const authLink = setContext(async (_, { headers }) => {
